@@ -1,0 +1,23 @@
+static void Main(string[] args)
+        {
+	// Write a program in C# Language that allows reading the notes of a
+class of 10 students. Calculate the class average and count how many students scored
+grade above this calculated average. Write the class average and the result of the
+score.
+            double media = 0;
+            double y = 0;
+            double[] N = new double[10];
+            int cont = 0;
+            for(int i = 0; i < 10; i++)
+            {
+                N[i] = double.Parse(Console.ReadLine());
+                y = y + N[i];
+            }
+            media = y / 10;
+            for(int i = 0; i < 10; i++)
+            {
+                if (N[i] > media)
+                {
+                    cont++;
+                }
+            }
