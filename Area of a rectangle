@@ -1,0 +1,17 @@
+static void Main(string[] args)
+{
+// Make a method that calculates the value of the area of a rectangle, from the
+base value and height
+double b, a;
+Console.WriteLine("Base: ");
+b = double.Parse(Console.ReadLine());
+Console.WriteLine("Altura: ");
+a = double.Parse(Console.ReadLine());
+double area = M(b, a);
+Console.WriteLine(area);
+}
+static double M (double x, double y)
+{
+double area = x * y;
+return area;
+}
