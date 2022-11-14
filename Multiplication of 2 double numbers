@@ -1,0 +1,15 @@
+static void Main(string[] args)
+{
+// Make method that takes 2 double numbers and returns the multiplication of the
+numbers.
+double x, y;
+x = double.Parse(Console.ReadLine());
+y = double.Parse(Console.ReadLine());
+double multi = M(x, y);
+Console.WriteLine(multi);
+}
+static double M (double a, double b)
+{
+double multi = a * b;
+return multi;
+}
