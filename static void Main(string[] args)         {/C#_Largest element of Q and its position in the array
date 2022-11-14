@@ -1,0 +1,25 @@
+        static void Main(string[] args)
+        {
+	// Write a C# Language Program to Read a 10 Position Q Array
+(accept only positive numbers). Then display on the console the value of the largest
+element of Q and its position in the array.
+            int[] Q = new int[10];
+            int pos = 0;
+            int high = 0;
+            for(int i = 0; i < 10; i++)
+            {
+                Q[i] = int.Parse(Console.ReadLine());
+                
+            }
+            
+            for(int i = 0; i < 10; i++)
+            {
+                if (Q[i] > higher)
+                {
+                    high = Q[i];
+                    pos = i;
+                }
+            }
+            
+            Console.WriteLine("Highest number: {0}; Position: {1}", maior, pos);
+        }
